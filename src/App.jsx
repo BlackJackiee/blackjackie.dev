@@ -23,7 +23,7 @@ function App() {
       </div>
       <h1>Vite + BlackJackie + React</h1>
       <div className="card">
-        <p>My Site Is Currently Being Built Up Using Vite+React+Bootstrap!</p>
+        <p>My Site Is Currently Being Built Up, Using Vite+React+Bootstrap!</p>
         <p className="read-the-docs">
           Check In Later To Check If It's Done Yet!
         </p>
