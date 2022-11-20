@@ -32,7 +32,10 @@ export default function AboutMeTab() {
                     style={{ listStyle: "none" }}
                   >
                     <li>
-                      <SocialBttn IconPath="bi bi-discord" />
+                      <SocialBttn
+                        IconPath="bi bi-discord"
+                        HrefLink="https://discordapp.com/users/330929694859984896"
+                      />
                     </li>
                     <li>
                       <SocialBttn
