@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Monke.png" />
+    <link rel="icon" type="image/svg+xml" href="src\assets\MonkeSmall.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BlackJackie</title>
     <link
@@ -10,7 +10,13 @@
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
   </head>
-  <body>
+  <body
+    style="
+      background-color: black;
+      background-image: url(/public/Background4x.png);
+      background-size: cover;
+    "
+  >
     <div id="root"></div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script type="module" src="/src/main.jsx"></script>
