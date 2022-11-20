@@ -17,11 +17,10 @@ export default function Footer(props) {
           <div className="col-5 col-lg-3">
             <img
               className="img-fluid m-0"
-              src="src\Components\Footer\assets\RightInfo.svg"
+              src="./assets/RightInfo.svg"
               alt=""
             />
           </div>
-          {/* Blackjackie Logo */}
         </div>
       </div>
 

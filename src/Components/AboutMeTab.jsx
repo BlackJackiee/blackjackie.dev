@@ -40,7 +40,7 @@ export default function AboutMeTab() {
                     <li>
                       <SocialBttn
                         IconPath=""
-                        src="src/assets/roblox.svg"
+                        src="../assets/roblox.svg"
                         HrefLink="https://www.roblox.com/users/214354501/profile"
                       />
                     </li>
