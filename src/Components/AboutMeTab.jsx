@@ -9,6 +9,7 @@ import MonkeSmall from "../assets/MonkeSmall.png";
 import ScripterIcon from "../assets/ScripterIcon.svg";
 import MapSvg from "../assets/Map.svg";
 import Rbx from "../assets/roblox.svg";
+import jeezus from "../assets/jeezus.png";
 
 export default function AboutMeTab() {
   return (
@@ -73,7 +74,7 @@ export default function AboutMeTab() {
                   </ul>
                 </div>
                 <div className="card-footer ">
-                  <img className="w-25" src="/src/assets/jeezus.png" />
+                  <img className="w-25" src={jeezus} />
                   <p className="card-text">
                     <small style={{ color: "var(--WhiteSecondary)" }}>
                       Let me Know If You Have Any Questions!

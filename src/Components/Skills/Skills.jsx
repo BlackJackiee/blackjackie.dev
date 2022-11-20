@@ -13,6 +13,7 @@ import OtherIcon from "./Icons/Other.svg";
 import UiIcon from "./Icons/UI DESIGNER.svg";
 import ProgrammerIcon from "./Icons/Programmer.svg";
 
+import SkillsDesc from "./Descriptions/SkillsDesc.svg";
 import ModellingDesc from "./Descriptions/3D Modelling.svg";
 import TexturingDesc from "./Descriptions/3D Texturing.svg";
 import OtherDesc from "./Descriptions/Other.svg";
@@ -32,7 +33,7 @@ export default function AboutMeTab() {
           <div className="row justify-content-center">
             <h1 className="fw-bold mb-md-2 mb-lg-4">Skills</h1>
             <img
-              src="src\Components\Skills\SkillsDesc.svg"
+              src={SkillsDesc}
               alt="Skills Description"
               className="col-lg-6"
             />

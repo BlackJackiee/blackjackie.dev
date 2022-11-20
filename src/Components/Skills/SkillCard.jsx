@@ -2,6 +2,18 @@ import "/Colours.css";
 import { motion } from "framer-motion";
 
 export default function SkillCard(props) {
+  //Only allowing the background colour to animate if the highlight prop isnt found (This Is To AVoid The Annoying Error That Apears In The Console)
+  let HoverAnim = {
+    scale: 1.13,
+  };
+  let TapAnim = {
+    scale: 0.9,
+  };
+  if (props.Highlight === undefined) {
+    HoverAnim.backgroundColor = "var(--BackgroundLight)";
+    TapAnim.backgroundColor = "var(--BackgroundDark)";
+  }
+
   return (
     <div
       className="card rounded-4"
@@ -12,11 +24,8 @@ export default function SkillCard(props) {
         <motion.div
           className="mx-auto btn-square-lg rounded-5"
           type="button"
-          whileHover={{
-            scale: 1.13,
-            backgroundColor: "var(--BackgroundLight)",
-          }}
-          whileTap={{ scale: 0.9, backgroundColor: "var(--BackgroundDark)" }}
+          whileHover={HoverAnim}
+          whileTap={TapAnim}
           transition={{ ease: "easeOut", duration: 0.1 }}
           style={{
             display: "flex",
