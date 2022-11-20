@@ -1,3 +1,7 @@
+// Image Imports
+import LeftInfo from "./assets/LeftInfo.svg";
+import RightInfo from "./assets/RightInfo.svg";
+
 export default function Footer(props) {
   return (
     <section
@@ -8,18 +12,10 @@ export default function Footer(props) {
       <div className="container-md pb-4">
         <div className="row justify-content-between align-items-center">
           <div className="col-5 col-lg-3">
-            <img
-              className="img-fluid"
-              src="src\Components\Footer\assets\LeftInfo.svg"
-              alt=""
-            />
+            <img className="img-fluid" src={LeftInfo} alt="" />
           </div>
           <div className="col-5 col-lg-3">
-            <img
-              className="img-fluid m-0"
-              src="./assets/RightInfo.svg"
-              alt=""
-            />
+            <img className="img-fluid m-0" src={RightInfo} alt="" />
           </div>
         </div>
       </div>

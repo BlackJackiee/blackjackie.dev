@@ -2,6 +2,14 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "/Colours.css";
 import SocialBttn from "./SocialBttn";
 
+// Image Imports
+import AboutMeText from "../assets/AboutMeText.svg";
+import RadialCircle from "../assets/RadialCircle.svg";
+import MonkeSmall from "../assets/MonkeSmall.png";
+import ScripterIcon from "../assets/ScripterIcon.svg";
+import MapSvg from "../assets/Map.svg";
+import Rbx from "../assets/roblox.svg";
+
 export default function AboutMeTab() {
   return (
     <section
@@ -40,7 +48,7 @@ export default function AboutMeTab() {
                     <li>
                       <SocialBttn
                         IconPath=""
-                        src="../assets/roblox.svg"
+                        src={Rbx}
                         HrefLink="https://www.roblox.com/users/214354501/profile"
                       />
                     </li>
@@ -85,19 +93,19 @@ export default function AboutMeTab() {
                 }}
               >
                 <div className="row">
-                  <img className="col-8" src="src/assets/AboutMeText.svg" />
+                  <img className="col-8" src={AboutMeText} />
                   <div className="col-4 position-relative">
                     <img
                       className="img-fluid top-50 start-50 position-absolute translate-middle"
-                      src="src/assets/RadialCircle.svg"
+                      src={RadialCircle}
                     />
                     <img
                       className="img-fluid top-50 start-50 position-absolute translate-middle"
-                      src="src/assets/MonkeSmall.png"
+                      src={MonkeSmall}
                     />
                     <img
                       className="img-fluid top-50 start-50 position-absolute translate-middle"
-                      src="src/assets/ScripterIcon.svg"
+                      src={ScripterIcon}
                     />
                   </div>
                 </div>
@@ -110,7 +118,7 @@ export default function AboutMeTab() {
                   backgroundColor: "var(--BackgroundSecondary)",
                 }}
               >
-                <img className="w-100 h-100" src="src/assets/Map.svg" />
+                <img className="w-100 h-100" src={MapSvg} />
               </div>
             </div>
           </div>

@@ -35,8 +35,8 @@ export default function SkillCard(props) {
           }}
         >
           <img
-            src={`src/Components/Skills/Icons/${props.Title}.svg`}
-            alt={`Icon Reprsenting ${props.Title}`}
+            src={props.IconSrc}
+            alt={`Icon Reprsenting ${props.IconSrc}`}
             aria-hidden="true"
             style={{ transform: "scale(0.8)" }}
           />
@@ -47,13 +47,13 @@ export default function SkillCard(props) {
       <div className="card-body p-5 pt-0">
         <img
           className="img-fluid card-title mb-4"
-          src={`src/Components/Skills/Titles/${props.Title}.svg`}
-          alt={`Title Text Reprsenting ${props.Title}`}
+          src={props.TitleSrc}
+          alt={`Title Text Reprsenting ${props.TitleSrc}`}
         />
         <img
           className="img-fluid"
-          src={`src/Components/Skills/Descriptions/${props.Title}.svg`}
-          alt={`Description Text Reprsenting ${props.Title}`}
+          src={props.DescSrc}
+          alt={`Description Text Reprsenting ${props.DescSrc}`}
         />
       </div>
     </div>
